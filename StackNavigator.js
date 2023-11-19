@@ -10,6 +10,7 @@ import SavedScreen from "./screens/SavedScreen";
 import BookingScreen from "./screens/BookingScreen";
 import ProfileScreen from "./screens/ProfileScreen";
 import { NavigationContainer } from "@react-navigation/native";
+import SearchScreen from "./screens/SearchScreen";
 
 const StackNavigator = () => {
   const Tab = createBottomTabNavigator();
@@ -26,7 +27,7 @@ const StackNavigator = () => {
             headerShown: false,
             tabBarIcon: ({ focused }) =>
               focused ? (
-                <Entypo name="home" size={24} color="#70DAD3" />
+                <Entypo name="home" size={24} color="#35B5AE" />
               ) : (
                 <AntDesign
                   name="home"
@@ -45,7 +46,7 @@ const StackNavigator = () => {
             headerShown: false,
             tabBarIcon: ({ focused }) =>
               focused ? (
-                <AntDesign name="heart" size={24} color="#70DAD3" />
+                <AntDesign name="heart" size={24} color="#35B5AE" />
               ) : (
                 <AntDesign
                   name="hearto"
@@ -64,7 +65,7 @@ const StackNavigator = () => {
             headerShown: false,
             tabBarIcon: ({ focused }) =>
               focused ? (
-                <Ionicons name="notifications" size={24} color="#70DAD3" />
+                <Ionicons name="notifications" size={24} color="#35B5AE" />
               ) : (
                 <Ionicons
                   name="notifications-outline"
@@ -83,7 +84,7 @@ const StackNavigator = () => {
             headerShown: false,
             tabBarIcon: ({ focused }) =>
               focused ? (
-                <Ionicons name="person" size={24} color="#70DAD3" />
+                <Ionicons name="person" size={24} color="#35B5AE" />
               ) : (
                 <Ionicons
                   name="person-outline"
@@ -105,6 +106,7 @@ const StackNavigator = () => {
           component={BottomTabs}
           options={{ headerShown: false }}
         />
+        <Stack.Screen name = "SearchScreen" component={SearchScreen} options={{headerShown:false}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
