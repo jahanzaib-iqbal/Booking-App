@@ -44,11 +44,11 @@ npx expo start
 
 You can choose to run the app on an emulator/simulator or scan the QR code with the Expo Go app on your mobile device to run it directly.
 
+<!-- 
 ## Usage
 
 Feel free to explore the app and make bookings for hotels, cars, and travel clubs. Customize the app according to your needs and contribute to its development.
-
-<!-- ## Contributing
+## Contributing
 
 If you'd like to contribute to the project, check out the [contributing guidelines](CONTRIBUTING.md). Contributions are welcome in the form of bug reports, feature requests, or code contributions.
 
