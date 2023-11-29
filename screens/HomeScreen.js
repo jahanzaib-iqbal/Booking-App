@@ -22,7 +22,6 @@ import {
   ModalContent,
 } from "react-native-modals";
 import SearchScreen from "./SearchScreen";
-
 const HomeScreen = () => {
   const navigation = useNavigation();
   const [selectedDates, setSelectedDates] = useState();
@@ -63,7 +62,6 @@ const HomeScreen = () => {
       ),
     });
   }, []);
-
   return (
     <>
       <View>
@@ -595,7 +593,6 @@ const HomeScreen = () => {
 };
 
 export default HomeScreen;
-
 const styles = StyleSheet.create({
   pressable: {
     flexDirection: "row",
